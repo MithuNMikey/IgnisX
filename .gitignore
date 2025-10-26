@@ -21,3 +21,10 @@ node_modules
 
 # cli
 dist
+# Environment variables
+.env
+.env.local
+.env.*.local
+packages/*/.env
+packages/*/.env.local
+

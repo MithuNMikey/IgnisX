@@ -16,11 +16,16 @@
     "vercel:yolo": "vercel --build-env YARN_ENABLE_IMMUTABLE_INSTALLS=false --build-env ENABLE_EXPERIMENTAL_COREPACK=1 --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true --build-env VERCEL_TELEMETRY_DISABLED=1"
   },
   "dependencies": {
+    "@avail-project/nexus-core": "^0.0.2",
     "@heroicons/react": "~2.1.5",
+    "@lit-protocol/contracts-sdk": "^7.3.1",
+    "@lit-protocol/sdk-nodejs": "^1.1.250",
     "@rainbow-me/rainbowkit": "2.2.8",
     "@tanstack/react-query": "~5.59.15",
-    "@uniswap/sdk-core": "~5.8.2",
+    "@uniswap/sdk-core": "^7.8.0",
     "@uniswap/v2-sdk": "~4.6.1",
+    "@uniswap/v3-sdk": "^3.26.0",
+    "axios": "^1.12.2",
     "blo": "~1.2.0",
     "burner-connector": "0.0.18",
     "daisyui": "5.0.9",

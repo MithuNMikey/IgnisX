@@ -118,6 +118,19 @@
   text-underline-offset: 2px;
 }
 
-.link:hover {
-  opacity: 80%;
-}
+  .link:hover {
+    opacity: 80%;
+  }
+
+  @keyframes reverse-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-reverse {
+    animation: reverse-spin 1s linear infinite;
+  }
