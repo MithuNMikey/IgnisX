@@ -43,67 +43,6 @@ Lit Protocol Vincent is used for secure, policy-limited delegated signing, ensur
 
 ---
 
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Node.js >= 20.18.3
-- Yarn >= 3.2.3
-- Git
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-org/ignisx.git
-   cd ignisx
-   ```
-
-2. **Install dependencies**
-   ```bash
-   yarn install
-   ```
-
-3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   
-   Edit `.env` with your configuration:
-   ```env
-   # Alchemy API Key (for RPC endpoints)
-   ALCHEMY_API_KEY=your_alchemy_api_key
-   
-   # Deployer Private Key (for contract deployment)
-   __RUNTIME_DEPLOYER_PRIVATE_KEY=your_private_key
-   
-   # Etherscan API Key (for contract verification)
-   ETHERSCAN_V2_API_KEY=your_etherscan_api_key
-   ```
-
-### Local Development
-
-1. **Start local blockchain**
-   ```bash
-   yarn chain
-   ```
-
-2. **Deploy contracts**
-   ```bash
-   yarn deploy
-   ```
-
-3. **Start frontend**
-   ```bash
-   yarn start
-   ```
-
-4. **Run tests**
-   ```bash
-   yarn test
-   ```
-
----
 
 ## 📦 Project Structure
 
@@ -194,26 +133,6 @@ ignisx/
 
 ---
 
-## 🔐 Security
-
-### Delegation Model
-
-IgnisX uses Lit Protocol Vincent for secure, policy-limited delegation:
-
-1. **Policy-Limited**: Delegation restricted by user-defined policies
-2. **Time-Bound**: Sessions have automatic expiry
-3. **Revocable**: Users can revoke delegation at any time
-4. **Transparent**: All operations are on-chain and auditable
-
-### Security Features
-
-- **No Custody Risk**: Users retain full control of their assets
-- **On-Chain Policies**: All delegation policies enforced on-chain
-- **Multi-Signature**: Critical operations require multiple signatures
-- **Emergency Pause**: Contracts can be paused in emergency situations
-
----
-
 ## 🚀 Deployment
 
 ### Testnet Deployment
@@ -243,29 +162,6 @@ For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ---
 
-## 🧪 Testing
-
-```bash
-# Run all tests
-yarn test
-
-# Run with gas reporting
-REPORT_GAS=true yarn test
-
-# Run with coverage
-yarn coverage
-```
-
-Test coverage includes:
-- ✅ Portfolio creation and management
-- ✅ Delegation policy setting and revocation
-- ✅ Cross-chain rebalancing operations
-- ✅ Lit Protocol delegation sessions
-- ✅ Integration between all contracts
-- ✅ Error handling and edge cases
-
----
-
 ## 📊 Supported Networks
 
 | Network | Chain ID | Status | Explorer |
@@ -278,21 +174,6 @@ Test coverage includes:
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow the existing code style
-- Add tests for new features
-- Update documentation
-- Ensure all tests pass
-- Maintain test coverage above 90%
 
 ---
 
@@ -308,15 +189,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Avail Project](https://availproject.org/) - Cross-chain infrastructure
 - [Lit Protocol](https://litprotocol.com/) - Decentralized signing
 - [OpenZeppelin](https://openzeppelin.com/) - Smart contract libraries
-
----
-
-## 📞 Support
-
-- **Documentation**: [docs.ignisx.com](https://docs.ignisx.com)
-- **Discord**: [discord.gg/ignisx](https://discord.gg/ignisx)
-- **Twitter**: [@IgnisXApp](https://twitter.com/IgnisXApp)
-- **Email**: support@ignisx.com
 
 ---
 
